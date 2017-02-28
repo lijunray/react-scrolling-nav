@@ -1,0 +1,9 @@
+node_modules/
+.vagrant/
+*.log
+bundle.js
+*.pyc
+.idea/
+main.css
+static/bundle/
+deploy.sh

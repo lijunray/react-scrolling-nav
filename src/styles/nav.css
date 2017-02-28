@@ -1,0 +1,25 @@
+.item {
+    height: 100%;
+    min-width: 86px;
+}
+
+.link {
+    color: white;
+    display: flex;
+    white-space: nowrap;
+    padding: 0 15px;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.link:hover {
+    color: white;
+    text-decoration: unset;
+    background-color: #616161;
+}
+
+.activeLink {
+    background-color: #616161;
+}
