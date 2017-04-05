@@ -26,7 +26,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --progress --watch",
     "start": "webpack-dev-server --inline --hot --watch",
-    "build": "babel ./src/navbar --out-dir lib"
+    "build:babel": "babel ./src/navbar --out-dir lib",
+    "build": "webpack --progress"
   },
   "repository": {
     "type": "git",
