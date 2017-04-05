@@ -8,7 +8,7 @@ const Navbar = ({
     items, offset, duration, delay, height, 
     backgroundColor, children, coverWidth, navWidth, linkClass, activeLinkClass
 }) => {
-    navbarStyle = {
+    const navbarStyle = {
         height: height ? height : 70,
         position: "fixed",
         left: 0,
