@@ -1,31 +1,32 @@
 {
   "name": "react-scrolling-nav",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A scrolling navigation bar for React.js",
-  "main": "./src/navbar",
+  "main": "./lib/index.js",
   "dependencies": {
     "react": "15.3.2",
     "react-dom": "^15.3.2",
     "react-scroll": "^1.4.7"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.0",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
-    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.26.1",
     "fs": "0.0.2",
     "less": "^2.7.2",
     "less-loader": "2.2.3",
-    "css-loader": "^0.26.1",
     "style-loader": "0.13.1",
     "webpack": "2.2.1",
     "webpack-dev-server": "^2.4.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --progress --watch --optimize-minimize",
-    "start": "webpack-dev-server --inline --hot --watch --optimize-minimize",
-    "build": "webpack --progress --optimize-minimize --env.production"
+    "watch": "webpack --progress --watch",
+    "start": "webpack-dev-server --inline --hot --watch",
+    "build": "babel ./src/navbar --out-dir lib"
   },
   "repository": {
     "type": "git",
