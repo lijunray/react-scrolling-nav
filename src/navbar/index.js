@@ -4,6 +4,8 @@ import { animateScroll } from 'react-scroll';
 import Navs from './navs';
 import ElementsWrapper from './elements-wrapper';
 
+import './styles/nav.css';
+
 const Navbar = ({ 
     items, offset, duration, delay, height, 
     backgroundColor, children, coverWidth, navWidth, linkClass, activeLinkClass

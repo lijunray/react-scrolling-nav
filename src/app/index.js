@@ -21,12 +21,18 @@ class App extends Component {
         }, {
             label: "Item 6",
             target: "item-6"
-        }, ]
+        }, ];
+
+        const containerStyle = {
+            width: "100%",
+            margin: "70px 0 100px"
+        }
+
         return (
             <div>
                 <Navbar items={navBarItems} offset={-80} duration={500} delay={0}>
                 </Navbar>
-                <div className="container">
+                <div style={containerStyle}>
                     <ElementsWrapper navItems={navBarItems}>
                         <div name="item-1" className="item">item 1</div>
                         <div name="item-2" className="item">item 2</div>

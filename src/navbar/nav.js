@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-import '../styles/nav.css';
-
 const Nav = ({ index, item, offset, duration, delay, moveNavs, width, linkClass, activeLinkClass }) => {
     const liStyle = {
         width: width,

@@ -1,8 +1,8 @@
 {
   "name": "react-scrolling-nav",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A scrolling navigation bar for React.js",
+  "main": "./src/navbar",
   "dependencies": {
     "react": "15.3.2",
     "react-dom": "^15.3.2",
@@ -23,8 +23,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --progress --watch",
-    "start": "webpack-dev-server --inline --hot --watch"
+    "watch": "webpack --progress --watch --optimize-minimize",
+    "start": "webpack-dev-server --inline --hot --watch --optimize-minimize",
+    "build": "webpack --progress --optimize-minimize --env.production"
   },
   "repository": {
     "type": "git",
