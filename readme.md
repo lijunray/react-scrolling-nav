@@ -5,6 +5,8 @@ This is a React navbar component based on <a href="https://github.com/fisshy/rea
 A quick screenshot example is shown below.
 ![desktop](./docs/example.gif)
 
+A live example is [here](https://lijunray.github.io/react-scrolling-nav/static/) and [code](https://github.com/lijunray/react-scrolling-nav/blob/master/src/app/index.js) in ES6.
+
 ### Run
 ```
 $ npm install
