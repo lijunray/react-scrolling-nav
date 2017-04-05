@@ -1,17 +1,18 @@
-.item {
-    height: 100%;
-    min-width: 86px;
+body {
+    margin: 0;
 }
 
 .link {
     color: white;
     display: flex;
-    white-space: nowrap;
-    padding: 0 15px;
+    padding: 0 10px;
     cursor: pointer;
-    justify-content: center;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
     height: 100%;
+    white-space: normal;
+    word-break: break-all;
 }
 
 .link:hover {
@@ -20,6 +21,17 @@
     background-color: #616161;
 }
 
-.activeLink {
+.active_link {
     background-color: #616161;
+}
+
+.item {
+    width: 100%;
+    height: 800px;
+    border: solid blue 1px;
+}
+
+.container {
+    width: 100%;
+    margin: 70px 0 100px;
 }

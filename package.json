@@ -4,19 +4,22 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "react": "15.3.2",
+    "react-dom": "^15.3.2",
+    "react-scroll": "^1.4.7"
+  },
+  "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "fs": "0.0.2",
-    "react": "15.3.2",
-    "react-dom": "^15.3.2",
-    "react-scroll": "^1.4.7",
     "less": "^2.7.2",
     "less-loader": "2.2.3",
     "css-loader": "^0.26.1",
     "style-loader": "0.13.1",
-    "webpack": "2.2.1"
+    "webpack": "2.2.1",
+    "webpack-dev-server": "^2.4.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -32,8 +35,5 @@
   "bugs": {
     "url": "https://github.com/lijunray/react-scrolling-nav/issues"
   },
-  "homepage": "https://github.com/lijunray/react-scrolling-nav#readme",
-  "devDependencies": {
-    "webpack-dev-server": "^2.4.1"
-  }
+  "homepage": "https://github.com/lijunray/react-scrolling-nav#readme"
 }
