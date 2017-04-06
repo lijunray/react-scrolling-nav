@@ -1,4 +1,4 @@
-# React Scrolling Navbar
+# React Scrolling Navbar [![npm](https://img.shields.io/npm/v/react-scrolling-nav.svg)](https://www.npmjs.com/package/react-scrolling-nav)
 
 This is a React navbar component based on <a href="https://github.com/fisshy/react-scroll">react-scroll</a>. While this component is good, it doesn't support mobile well, especially when there are many items in navbar. That's why we need another navbar design for more responsiveness, mobile friendliness. 
 
@@ -7,7 +7,12 @@ A quick screenshot example is shown below.
 
 A live example is [here](https://lijunray.github.io/react-scrolling-nav/static/) and [code](https://github.com/lijunray/react-scrolling-nav/blob/master/src/app/index.js) in ES6.
 
-### Run
+### Installation
+```
+$ npm install --save react-scrolling-nav
+```
+
+### Run [Example](https://lijunray.github.io/react-scrolling-nav/static/) locally
 ```
 $ npm install
 $ npm run start
@@ -23,7 +28,7 @@ import NavBar, { ElementWrapper } from 'react-scrolling-nav';
 
 class App extends Component {
     render() {
-        const navBarItems = [{
+        const navbarItems = [{
             label: "Item 1Item 1Item 1Item 1",
             target: "item-1"
         }, {
@@ -44,10 +49,10 @@ class App extends Component {
         }, ]
         return (
             <div>
-                <Navbar items={navBarItems} offset={-80} duration={500} delay={0}>
+                <Navbar items={navbarItems} offset={-80} duration={500} delay={0}>
                 </Navbar>
                 <div className="container">
-                    <ElementsWrapper navItems={navBarItems}>
+                    <ElementsWrapper navItems={navbarItems}>
                         <div name="item-1" className="item">item 1</div>
                         <div name="item-2" className="item">item 2</div>
                         <div name="item-3" className="item">item 3</div>
