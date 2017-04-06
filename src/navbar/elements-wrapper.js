@@ -1,10 +1,10 @@
 import React, { PropTypes } from 'react';
 import { Element } from 'react-scroll';
 
-const ElementsWrapper = ({ children, navItems, style, className }) => (
+const ElementsWrapper = ({ children, items, style, className }) => (
     <div>
         {children.map((child, i) => (
-            <Element style={style} className={className} name={navItems[i].target} key={i} >{child}</Element>
+            <Element style={style} className={className} name={items[i].target} key={i} >{child}</Element>
         ))}
     </div>
 );

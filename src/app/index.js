@@ -3,7 +3,7 @@ import Navbar, { ElementsWrapper } from '../navbar/';
 
 class App extends Component {
     render() {
-        const navBarItems = [{
+        const navbarItems = [{
             label: "Item 1Item 1Item 1Item 1",
             target: "item-1"
         }, {
@@ -30,10 +30,10 @@ class App extends Component {
 
         return (
             <div>
-                <Navbar items={navBarItems} offset={-80} duration={500} delay={0}>
+                <Navbar items={navbarItems} offset={-80} duration={500} delay={0}>
                 </Navbar>
                 <div style={containerStyle}>
-                    <ElementsWrapper navItems={navBarItems}>
+                    <ElementsWrapper items={navbarItems}>
                         <div name="item-1" className="item">item 1</div>
                         <div name="item-2" className="item">item 2</div>
                         <div name="item-3" className="item">item 3</div>

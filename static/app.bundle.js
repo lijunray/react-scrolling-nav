@@ -11837,7 +11837,7 @@ var App = function (_Component) {
                     { style: containerStyle },
                     _react2.default.createElement(
                         _navbar.ElementsWrapper,
-                        { navItems: navBarItems },
+                        { items: navBarItems },
                         _react2.default.createElement(
                             'div',
                             { name: 'item-1', className: 'item' },
@@ -11900,7 +11900,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var ElementsWrapper = function ElementsWrapper(_ref) {
     var children = _ref.children,
-        navItems = _ref.navItems,
+        items = _ref.items,
         style = _ref.style,
         className = _ref.className;
     return _react2.default.createElement(
@@ -11909,7 +11909,7 @@ var ElementsWrapper = function ElementsWrapper(_ref) {
         children.map(function (child, i) {
             return _react2.default.createElement(
                 _reactScroll.Element,
-                { style: style, className: className, name: navItems[i].target, key: i },
+                { style: style, className: className, name: items[i].target, key: i },
                 child
             );
         })
