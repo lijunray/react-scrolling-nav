@@ -83,12 +83,12 @@ Define an array that contains all of your navbar items in format `{ label: "item
     navWidth={86} // the width of every item on navbar
     linkClass={"link"} // the class of link
     activeLinkClass={"activeLink"} // class applied when element is reached
-    />
+/>
 
 <ElementWrapper
     items={items={navbarItems}} // Required, the items you want to navigate
-    >
+>
     // components...
-    </ElementWrapper>
+</ElementWrapper>
 ```
 Except `coverWidth`, all values above are the default, respectively.
