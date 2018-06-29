@@ -1,4 +1,4 @@
-# React Scrolling Navbar [![npm](https://img.shields.io/npm/v/react-scrolling-nav.svg)](https://www.npmjs.com/package/react-scrolling-nav)
+# React Scrolling NavBar [![npm](https://img.shields.io/npm/v/react-scrolling-nav.svg)](https://www.npmjs.com/package/react-scrolling-nav)
 
 This is a React navbar component based on <a href="https://github.com/fisshy/react-scroll">react-scroll</a>. While this component is good, it doesn't support mobile well, especially when there are many items in navbar. That's why we need another navbar design for more responsiveness, mobile friendliness. 
 
@@ -24,12 +24,12 @@ Open localhost:8080, you'll see a simple example.
 ES6:
 ```javascript
 import React, { Component } from 'react';
-import NavBar, { ElementWrapper } from 'react-scrolling-nav';
+import NavBar, { ElementsWrapper } from 'react-scrolling-nav';
 
 class App extends Component {
     render() {
         const navbarItems = [{
-            label: "Item 1Item 1Item 1Item 1",
+            label: "Item 1",
             target: "item-1"
         }, {
             label: "Item 2",
@@ -49,10 +49,10 @@ class App extends Component {
         }, ]
         return (
             <div>
-                <Navbar items={navbarItems} offset={-80} duration={500} delay={0}>
-                </Navbar>
+                <NavBar items={navbarItems} offset={-80} duration={500} delay={0}>
+                </NavBar>
                 <div className="container">
-                    <ElementsWrapper navItems={navbarItems}>
+                    <ElementsWrapper items={navbarItems}>
                         <div name="item-1" className="item">item 1</div>
                         <div name="item-2" className="item">item 2</div>
                         <div name="item-3" className="item">item 3</div>
@@ -72,7 +72,7 @@ Define an array that contains all of your navbar items in format `{ label: "item
 
 ### Options
 ```javascript
-<Navbar
+<NavBar
     items={navbarItems} // Required, the items you want to navigate
     offset={-80} // scroll additional px
     duration={500} // time of scroll animation
@@ -85,10 +85,10 @@ Define an array that contains all of your navbar items in format `{ label: "item
     activeLinkClass={"activeLink"} // class applied when element is reached
 />
 
-<ElementWrapper
+<ElementsWrapper
     items={items={navbarItems}} // Required, the items you want to navigate
 >
     // components...
-</ElementWrapper>
+</ElementsWrapper>
 ```
 Except `coverWidth`, all values above are the default, respectively.
