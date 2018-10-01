@@ -1,5 +1,7 @@
 # React Scrolling NavBar [![npm](https://img.shields.io/npm/v/react-scrolling-nav.svg)](https://www.npmjs.com/package/react-scrolling-nav)
 
+**This Repo is not actively maintained! Please do not use in professional environment!**
+
 This is a React navbar component based on <a href="https://github.com/fisshy/react-scroll">react-scroll</a>. While this component is good, it doesn't support mobile well, especially when there are many items in navbar. That's why we need another navbar design for more responsiveness, mobile friendliness. 
 
 A quick screenshot example is shown below.
