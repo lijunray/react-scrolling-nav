@@ -10,10 +10,13 @@ module.exports = {
         rules: [
             {
                 test: /\.jsx?$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/,
-                options: {
-                    presets: ['react', 'es2015']
+                exclude: /(node_modules|lib)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env', '@babel/preset-react'],
+                        plugins: ['@babel/plugin-transform-runtime']
+                    }
                 }
             },
             {
@@ -33,5 +36,6 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         contentBase: './static/'
-    }
+    },
+    mode: 'development'
 };

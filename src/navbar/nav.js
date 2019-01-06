@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Link } from 'react-scroll';
 
@@ -28,15 +29,15 @@ const Nav = ({ index, item, offset, duration, delay, moveNavs, width, linkClass,
 };
 
 Nav.propTypes = {
-    index: React.PropTypes.number.isRequired,
-    item: React.PropTypes.object.isRequired,
-    offset: React.PropTypes.number,
-    duration: React.PropTypes.number,
-    delay: React.PropTypes.number,
-    moveNavs: React.PropTypes.func,
-    width: React.PropTypes.number,
-    linkClass: React.PropTypes.string, 
-    activeLinkClass: React.PropTypes.string
+    index: PropTypes.number.isRequired,
+    item: PropTypes.object.isRequired,
+    offset: PropTypes.number,
+    duration: PropTypes.number,
+    delay: PropTypes.number,
+    moveNavs: PropTypes.func,
+    width: PropTypes.number,
+    linkClass: PropTypes.string, 
+    activeLinkClass: PropTypes.string
 }
 
 export default Nav;

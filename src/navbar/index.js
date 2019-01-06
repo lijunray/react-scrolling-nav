@@ -1,5 +1,5 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import { animateScroll } from 'react-scroll';
 
 import Navs from './navs';
 import ElementsWrapper from './elements-wrapper';
@@ -37,16 +37,16 @@ const Navbar = ({
 };
 
 Navbar.propTypes = {
-    items: React.PropTypes.array.isRequired,
-    offset: React.PropTypes.number,
-    duration: React.PropTypes.number,
-    delay: React.PropTypes.number,
-    navbarStyle: React.PropTypes.object,
-    height: React.PropTypes.number,
-    backgroundColor: React.PropTypes.string,
-    children: React.PropTypes.node,
-    coverWidth: React.PropTypes.number,
-    navWidth: React.PropTypes.number
+    items: PropTypes.array.isRequired,
+    offset: PropTypes.number,
+    duration: PropTypes.number,
+    delay: PropTypes.number,
+    navbarStyle: PropTypes.object,
+    height: PropTypes.number,
+    backgroundColor: PropTypes.string,
+    children: PropTypes.node,
+    coverWidth: PropTypes.number,
+    navWidth: PropTypes.number
 }
 
 export default Navbar;
