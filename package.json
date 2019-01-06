@@ -37,7 +37,8 @@
     "start": "webpack-dev-server --inline --hot --watch",
     "build": "npx webpack --config webpack.config.js",
     "buildlib": "webpack --progress",
-    "buildbabel": "babel ./src/navbar --out-dir lib"
+    "buildbabel": "babel ./src/navbar --out-dir lib",
+    "publish": "npm run buildbabel && npm publish"
   },
   "repository": {
     "type": "git",
