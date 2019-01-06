@@ -17,7 +17,7 @@ $ npm install --save react-scrolling-nav
 ### Run [Example](https://lijunray.github.io/react-scrolling-nav/static/) locally
 ```
 $ npm install
-$ npm run start
+$ npm run watch
 ```
 Open localhost:8080, you'll see a simple example.
 
@@ -94,3 +94,38 @@ Define an array that contains all of your navbar items in format `{ label: "item
 </ElementsWrapper>
 ```
 Except `coverWidth`, all values above are the default, respectively.
+
+### TODO
+- Add eslint and refactor.
+- Add unit tests.
+
+### Contribution
+#### You
+1. Create your own branch, let's say `new-feature` and Switch to the branch.
+```bash
+git checkout -b new-feature && git checkout new-feature
+```
+2. Coding with `webpack-dev-server`.
+```
+npm run watch
+```
+3. Build Github static page.
+```
+npm run build
+```
+4. Push to Github.
+```
+git push origin new-feature
+```
+5. Get your PR reviewed, approved and merge.
+#### Admin
+6. Change local branch to master and pull remote.
+```
+git checkout master
+git pull
+```
+7. Update version, then build and publish to npm.
+```
+npm version [major|minor|patch]
+npm run publish
+```
