@@ -1,6 +1,6 @@
 {
   "name": "react-scrolling-nav",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "A scrolling navigation bar for React.js",
   "main": "./lib/index.js",
   "dependencies": {
