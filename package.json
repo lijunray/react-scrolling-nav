@@ -35,7 +35,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack-dev-server --inline --hot --watch",
     "build": "npx webpack --config webpack.config.js",
-    "buildbabel": "babel ./src/navbar --out-dir lib",
+    "build-babel": "babel ./src/navbar --out-dir lib",
     "publish": "npm run buildbabel && npm publish"
   },
   "repository": {
@@ -47,5 +47,8 @@
   "bugs": {
     "url": "https://github.com/lijunray/react-scrolling-nav/issues"
   },
-  "homepage": "https://github.com/lijunray/react-scrolling-nav#readme"
+  "homepage": "https://github.com/lijunray/react-scrolling-nav#readme",
+  "files": [
+    "/lib"
+  ]
 }
