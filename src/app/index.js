@@ -4,7 +4,7 @@ import Navbar, { ElementsWrapper } from '../navbar/';
 class App extends Component {
     render() {
         const navbarItems = [{
-            label: "Item 1Item 1Item 1Item 1",
+            label: "Item 1Item 1Item 1Item 1 Item 1Item 1Item 1Item 1",
             target: "item-1"
         }, {
             label: "Item 2",
