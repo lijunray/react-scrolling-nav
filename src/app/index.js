@@ -7,7 +7,7 @@ class App extends Component {
             label: "Item 1Item 1Item 1Item 1",
             target: "item-1"
         }, {
-            label: "Item 2",
+            label: "Item 2+2",
             target: "item-2"
         }, {
             label: "Item 3",
